@@ -1,0 +1,8 @@
+usage
+
+	# httpd.conf 
+	LoadModule mime_static_html_module modules/mod_mime_static_html.so
+
+        # return mod_php_not_supported.html as text/html if request's MIME is 'application/x-httpd-php' 
+	AddMIMEStatic application/x-httpd-php error/mod_php_not_supported.html
+
